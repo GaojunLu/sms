@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#B4CDE6">
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+           
+    <include layout="@layout/titlebar"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送到："
+            android:textSize="15sp"/>
+        <AutoCompleteTextView 
+            android:id="@+id/et_newsms_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="请输入号码"
+            android:textSize="15sp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/bg_btn_normal"
+            android:completionThreshold="1"/>
+        
+        <ImageView 
+            android:id="@+id/iv_newsms_select_contact"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/select_contact_bg"/>
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/et_newsms_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:hint="请输入内容"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn_normal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="top"
+        android:padding="5dp"/>
+    
+    <Button 
+        android:id="@+id/bt_newsms_send"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="发送"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_normal"/>
+ 
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

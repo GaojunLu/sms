@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/common_checkbox_normal"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/bt_background_press" >
+
+        <ImageView
+            android:id="@+id/iv_avetar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:padding="5dp"
+            android:src="@drawable/img_default_avatar" />
+
+        <TextView
+            android:id="@+id/tv_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="年月日" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/tv_item_date"
+            android:layout_toRightOf="@id/iv_avetar"
+            android:singleLine="true"
+            android:text="名字"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_item_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_item_name"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_avetar"
+            android:singleLine="true"
+            android:text="爱对方阿道夫清二姐夫阿道夫奇偶根据搜狗 爱的色放vaegv" />
+    </RelativeLayout>
+
+</LinearLayout>
